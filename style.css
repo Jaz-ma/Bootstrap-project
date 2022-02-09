@@ -42,10 +42,7 @@ nav h1 :hover{
     min-height: 15vw;
     object-fit: cover;
 }
-.section1, .section2{
-   
 
-}
 #appointment{
     min-height: 60vh;
 }
