@@ -1,0 +1,80 @@
+body{
+    font-family: 'Lato', sans-serif;
+}
+::-webkit-scrollbar {
+    width: 16.5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+nav{
+    border-bottom: solid 2px silver;
+}
+nav h1{
+    color: silver;
+}
+nav h1 :hover{
+    color: black;
+}
+
+.section1{
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('images/peircing\ artist.jpg'), center fixed no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    min-height: 80vh;
+    color: white;
+    position: relative;
+}
+.card-img-top {
+    width: 100%;
+    min-height: 15vw;
+    object-fit: cover;
+}
+.section1, .section2{
+    border-bottom: silver 5px solid;
+
+}
+#appointment{
+    min-height: 60vh;
+}
+form{
+    max-width: 80%;
+    margin: 0 !important;
+    margin-left: 5rem !;
+}
+.footer-info{
+    
+    border-bottom: 1px solid white;
+    color: white;
+}
+footer{
+    
+    
+    min-height: 15vh;
+}
+footer svg{
+    padding-bottom: 3px;
+}
+
+@media only screen and (max-width: 768px) {
+    .section1{
+        min-height: 80vh ;
+    }
+    .intro-text h1{
+        margin-bottom: 3rem;
+
+    }
+   
+  }
