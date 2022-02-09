@@ -33,7 +33,7 @@ nav h1 :hover{
     background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('images/peircing\ artist.jpg'), center fixed no-repeat;
     background-size: cover;
     background-blend-mode: darken;
-    min-height: 80vh;
+    min-height: 90vh;
     color: white;
     position: relative;
 }
@@ -43,7 +43,7 @@ nav h1 :hover{
     object-fit: cover;
 }
 .section1, .section2{
-    border-bottom: silver 5px solid;
+   
 
 }
 #appointment{
@@ -69,10 +69,9 @@ footer svg{
 }
 
 @media only screen and (max-width: 768px) {
-    .section1{
-        min-height: 80vh ;
-    }
+    
     .intro-text h1{
+        margin-top: 3rem;
         margin-bottom: 3rem;
 
     }
