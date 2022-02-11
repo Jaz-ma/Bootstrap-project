@@ -22,10 +22,10 @@ body{
 nav{
     border-bottom: solid 2px silver;
 }
-nav h1{
-    color: silver;
+nav h2{
+    color: rgb(109, 101, 101);
 }
-nav h1 :hover{
+nav h2 :hover{
     color: black;
 }
 
