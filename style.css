@@ -19,6 +19,18 @@ body{
   ::-webkit-scrollbar-thumb:hover {
     background: #555; 
   }
+  header svg{
+      margin-bottom: 0.28rem;
+      margin-right: 0.2rem;
+  }
+  header a{
+      padding: 1rem;
+      color: silver;
+      text-decoration: none;
+  }
+  header a:hover{
+      color: pink;
+  }
 nav{
     border-bottom: solid 2px silver;
 }
@@ -78,5 +90,7 @@ footer svg{
         background-blend-mode: darken;
         
     }    
-   
+    header{
+        display: none;
+    }
   }
