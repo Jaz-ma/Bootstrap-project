@@ -49,6 +49,14 @@ nav h2 :hover{
     color: white;
     position: relative;
 }
+#gallery{
+    background: rgb(204,204,204);
+    background: -moz-linear-gradient(83deg, rgba(204,204,204,1) 0%, rgba(230,230,230,1) 49%, rgba(255,240,240,1) 100%);
+    background: -webkit-linear-gradient(83deg, rgba(204,204,204,1) 0%, rgba(230,230,230,1) 49%, rgba(255,240,240,1) 100%);
+    background: linear-gradient(83deg, rgba(204,204,204,1) 0%, rgba(230,230,230,1) 49%, rgba(255,240,240,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cccccc",endColorstr="#fff0f0",GradientType=1);
+
+}
 .card-img-top {
     width: 100%;
     min-height: 15vw;
