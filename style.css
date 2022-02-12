@@ -57,6 +57,7 @@ nav h2 :hover{
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cccccc",endColorstr="#fff0f0",GradientType=1);
 
 }
+
 .card-img-top {
     width: 100%;
     min-height: 15vw;
@@ -91,6 +92,9 @@ footer svg{
         margin-top: 3rem;
         margin-bottom: 3rem;
 
+    }
+    #cont{
+        margin-left: 2rem;
     }
     .section1{
         background: url('images/Piercing4.jpg'), center fixed no-repeat;
