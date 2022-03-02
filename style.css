@@ -99,6 +99,15 @@ nav h5:hover{
 #served .counter-wrapper{
     margin: 1rem 0;
 }
+.counter{
+    color: pink;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+
+}
+.counter:hover{
+    transform: scale(1.6);
+}
 #appointment{
     min-height: 60vh;
 }
