@@ -1,5 +1,6 @@
 body{
     font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
 }
 ::-webkit-scrollbar {
     width: 16.5px;
@@ -37,14 +38,21 @@ nav{
     border-bottom: solid 2px silver;
     box-shadow: rgba(0, 0, 0, 0.7);
 }
+
 nav h2{
     color: rgb(109, 101, 101);
 }
-nav h2 :hover{
-    color: black;
+nav h5:hover{
+    color: pink !important;
+}
+.nav-item{
+    font-size: 2px  !important;
+
 }
 .navbar-brand
 {
+    
+
     margin: 0;
     padding: 0;
 }
@@ -63,25 +71,34 @@ nav h2 :hover{
     color: white;
     position: relative;
 }
+#about{
+    visibility: hidden;
+}
 #gallery{
-    background: rgb(204,204,204);
-    background: -moz-linear-gradient(83deg, rgba(204,204,204,1) 0%, rgba(230,230,230,1) 49%, rgba(255,240,240,1) 100%);
-    background: -webkit-linear-gradient(83deg, rgba(204,204,204,1) 0%, rgba(230,230,230,1) 49%, rgba(255,240,240,1) 100%);
-    background: linear-gradient(83deg, rgba(204,204,204,1) 0%, rgba(230,230,230,1) 49%, rgba(255,240,240,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cccccc",endColorstr="#fff0f0",GradientType=1);
-
+    visibility: hidden;
 }
-.carousel-item{
-    min-height: 32rem !important;
-   
+.gallery-wrapper{
+    margin-left: 6.5%;
+    margin-right: 6.5%;
 }
-
-.card-img-top {
-    width: 100%;
-    min-height: 15vw;
-    object-fit: cover;
+.gallery-card{
+    visibility: hidden;
 }
-
+.card{
+    transition: 0.5s ease-in-out;
+    
+    cursor: pointer;
+    margin: 0.5rem;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+#served{
+    padding: 4rem 0;
+}
+#served .counter-wrapper{
+    margin: 1rem 0;
+}
 #appointment{
     min-height: 60vh;
 }
@@ -90,6 +107,7 @@ form{
     margin: 0 !important;
     margin-left: 5rem !;
 }
+
 .footer-info{
     
     border-bottom: 1px solid white;
@@ -108,10 +126,10 @@ footer svg{
 }
 
 @media only screen and (max-width: 768px) {
-    
-    .carousel-item{
-        min-height: 30vh !important;
+    .card{
+        
     }
+   
     
     .intro-text h1{
         margin-top: 3rem;
@@ -142,3 +160,54 @@ footer svg{
         
     }
   }
+  .slide-in-left{
+    animation: slide-in-left 1.5s ease-in-out;
+    visibility: visible !important;
+}
+.slide-in-down{
+    animation:  slide-in-down 1.75s ease-in-out;
+    visibility: visible !important;
+}
+.fade-in{
+    animation:  fade-in 1.75s ease-in-out;
+    visibility: visible !important;
+}
+  @keyframes slide-in-left{
+
+    0%{
+        transform: translatex(-500px);
+        opacity: 0.2;
+
+    }
+    1%{
+        transform: translatex(500px);
+        opacity: 0.2;
+
+    }
+
+    100%{
+        transform: translatex(0px);
+        opacity: 0.9;
+
+    }
+}
+@keyframes slide-in-down{
+    0%{
+        transform: translateY(500px);
+        opacity: 0.3;
+    }
+
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes fade-in{
+    0%{
+        opacity: 0.3;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
