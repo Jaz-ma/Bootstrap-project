@@ -86,7 +86,6 @@ nav h5:hover{
 }
 .card{
     transition: 0.5s ease-in-out;
-    
     cursor: pointer;
     margin: 0.5rem;
 }
@@ -94,6 +93,7 @@ nav h5:hover{
     transform: scale(1.1);
 }
 #served{
+    min-width: 100%;
     padding: 4rem 0;
 }
 #served .counter-wrapper{
@@ -135,8 +135,7 @@ footer svg{
 }
 
 @media only screen and (max-width: 768px) {
-   
-   
+ 
     
     .intro-text h1{
         margin-top: 3rem;
